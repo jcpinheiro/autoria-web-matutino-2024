@@ -14,6 +14,11 @@ header p {
     font-family: Calibri, sans-serif;
 }
 
+#email {
+   font-weight: bold; 
+}
+
+
 h1 {
     font-size: 60px;
 }
@@ -26,3 +31,15 @@ h2 {
     border-bottom-right-radius: 50px;
 }
 
+.identacao {
+    text-indent: 4ch;
+}
+
+.destaque {
+    font-weight: 500;
+}
+
+.codigo {
+    font-family: monospace;
+    font-size: 120%;
+}
