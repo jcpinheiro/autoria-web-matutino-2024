@@ -1,65 +1,120 @@
 body {
-    width: 960px;
+    font-family: 'Roboto',  Helvetica, sans-serif;
+    background-color: #F5F0DC;
+    width: 1024px;
+
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(249, 241, 208);
 
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+#banner {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    transform: rotate(45deg) translate(58px, 22px);
 }
 
 #titulo {
     text-align: center;
-    font-size: 3rem;
+    text-shadow: 1px 1px 3px #140905;
+
+    font-size: 2.5rem;
 }
 
 .menu {
+    width: 200px;
     float: left;
-}
 
-/*nav ul { */
- .menu-lg {
-    list-style: none;
-    padding-left: 0;
-}
-
-.menu-lg li {
-    background-color: #916c05;
-
-    margin-bottom: 10px;
-    width: 180px;
-    padding: 10px;
-
-    border-radius: 5px;
-    border-bottom-right-radius: 40px;
-}
-
-nav li:hover {
-    background-color: #312401;
-    color: white;
-}
-
-nav li a {
-    text-decoration: none;
-    color: white;
 }
 
 .conteudo {
+    width: 780px;
     float: right;
+    margin-bottom: 30px;
+}
+
+.menu ul {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.menu li {
+    margin-bottom: 10px;
+    background-color: #9e6305;
+
+    padding: 10px;
+
+    border-radius: 5px;
+    border-bottom-right-radius: 50px;
+}
+
+
+.menu li:hover {
+    background-color: #140d02;
+    transition: 8s;
+}
+
+.menu li a {
+    color: #EEE;
+    text-decoration: none;
 }
 
 .foto-instantanea {
-    background-color: white;
-    border: 1px #333 SOLID;
-    border-radius: 5px;
-
+    background-color: #FFF;
+    width: 300px;
     text-align: center;
-    padding: 10px;
+    padding: 8px;
+    padding-top: 12px;
 
-    width: 280px;
+    border: 1px SOLID #222;
+    border-radius: 10px;
+    font-family: cursive;
 }
-
 
 .foto-instantanea:hover {
     transform: rotate(-10deg);
+
+}
+
+.subtitulo {
+    background: rgb(60, 46, 2);
+    background: linear-gradient(90deg, rgba(14,11,0,1) 0%, rgba(195,127,10,0.3038793103448276) 39%, rgba(255,221,0,0.3836206896551724) 100%);
+    color: #EEE;
+
+    padding: 10px;
+    padding-left: 20px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 50px;
+}
+
+#tb-nutrientes {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 70%;
+
+    border: 4px SOLID #222;
+}
+
+#tb-nutrientes thead {
+    background-color: #6c4707;
+    color: #FFF;
+
+}
+
+#tb-nutrientes th {
+  padding: 10px;
+
+}
+
+#tb-nutrientes tbody tr:nth-child(odd) {
+    background-color: #e7ae4b;
+}
+
+#tb-nutrientes tbody tr:nth-child(even) {
+    background-color: #EEE;
 
 }
