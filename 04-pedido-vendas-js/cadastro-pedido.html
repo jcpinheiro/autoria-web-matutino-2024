@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container mt-4">
+       <h1 class="text-center">Novo Pedido</h1>
+       <section>
+        <form action="">
+            <div class="my-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" 
+                       placeholder="Infome o nome do produto" autofocus 
+                       name="nome">
+              </div>
+              <div class="mb-3">
+                <label for="quantidade" class="form-label">Quantidade</label>
+                <input type="number" class="form-control" id="quantidade" 
+                       placeholder="Informe a quantidade" name="quantidade">
+              </div>
+              <div class="mb-3">
+                <label for="valor" class="form-label">Preço</label>
+                <input type="number" class="form-control" id="valor" 
+                       placeholder="Informe o preço do produto" name="valor">
+              </div>
+              <div class="d-flex justify-content-center">
+                 <button type="submit" class="btn btn-outline-primary">Cadastrar Item</button>
+                 <button type="reset" class="btn btn-outline-secondary">Limpar Formulário</button>
+              </div>
+        </form>
+    </section> <!-- Formulário de cadastro  -->
+    <section class="mt-4">
+        <h2 class="text-center">Itens do Pedido</h2>
+        <table class="table table-hover table-bordered">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Quantidade</th>
+                <th>Valor Unitário</th>
+                <th>Subtotal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Notebook dell</td>
+                <td>2</td>
+                <td>4.000,00</td>
+                <td>8.000,00</td>
+              </tr>
+              <tr>
+                <td>SmartPhone Samsung</td>
+                <td>3</td>
+                <td>2.000,00</td>
+                <td>6.000,00</td>
+              </tr>
+            </tbody>
+          </table>
+    </section>
+
+
+    </div>
+   
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
