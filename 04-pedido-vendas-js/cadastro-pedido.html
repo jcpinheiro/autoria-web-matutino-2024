@@ -14,6 +14,7 @@
             <div class="my-3">
                 <label for="nome" class="form-label">Nome</label>
                 <input type="text" class="form-control" id="nome" 
+                       value="Notebook Dell"
                        placeholder="Infome o nome do produto" autofocus 
                        name="nome">
               </div>
@@ -28,7 +29,7 @@
                        placeholder="Informe o preço do produto" name="valor">
               </div>
               <div class="d-flex justify-content-center">
-                 <button type="submit" class="btn btn-outline-primary">Cadastrar Item</button>
+                 <button id="btnCadastro" type="submit" class="btn btn-outline-primary">Cadastrar Item</button>
                  <button type="reset" class="btn btn-outline-secondary">Limpar Formulário</button>
               </div>
         </form>
@@ -44,26 +45,18 @@
                 <th>Subtotal</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Notebook dell</td>
-                <td>2</td>
-                <td>4.000,00</td>
-                <td>8.000,00</td>
-              </tr>
-              <tr>
-                <td>SmartPhone Samsung</td>
-                <td>3</td>
-                <td>2.000,00</td>
-                <td>6.000,00</td>
-              </tr>
+            <tbody id="tbody-js">
+              <!-- vamos adicionar os itens via javascript -->
             </tbody>
           </table>
     </section>
 
-
+ 
+  
     </div>
    
   </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script src="javascript/venda.js"></script>
 </html>

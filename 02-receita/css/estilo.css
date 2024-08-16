@@ -54,7 +54,7 @@ body {
 
 .menu li:hover {
     background-color: #140d02;
-    transition: 8s;
+    transition: 4s;
 }
 
 .menu li a {
@@ -111,7 +111,7 @@ body {
 }
 
 #tb-nutrientes tbody tr:nth-child(odd) {
-    background-color: #e7ae4b;
+    background-color: #f1c06a;
 }
 
 #tb-nutrientes tbody tr:nth-child(even) {
